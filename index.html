@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+   <head>
+     <title>Sistema de backup</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+   </head>
+   <body>
+      <div id='principal'>
+        <p>
+          <h1>Backup do sistema</h1>
+          <a href="{{ url_for('static', filename='pagina.tar.gz') }}">Download</a>
+          <form action="pagina" method="POST">        
+            <input name="sair" type="submit" id="sair" value="Sair">
+        </p>
+      </div>
+   </body>
+</html>

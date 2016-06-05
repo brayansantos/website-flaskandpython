@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sistema de Backup - Autenticação</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+  </head>
+  <body>
+    <form  action="login" method="POST">
+      <table>
+        <tr><th>usuário:</th><td><input name="usuario"   type="text"     size="30"</td></tr>
+        <tr><th>senha:</th><td><input name="password"  type="password" size="30"></td></tr>
+        <tr><th></th><td><input name="enviar" type="submit" id="enviar" value="Entrar"></td></tr>
+      </table>
+  </body>
+</html>
